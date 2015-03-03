@@ -1,0 +1,8 @@
+.idea/
+.idea_modules/
+different-source-folders/target/
+explicit-test-suites/target/
+project/project/target/
+project/target/
+tagging-your-suites/target/
+target/
