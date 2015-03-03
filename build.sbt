@@ -4,7 +4,8 @@ version := "1.0"
 
 scalaVersion := Common.scalaVersion
 
-lazy val partitioningRecipes = project.in(file(".")).aggregate(differentSourceFolder, taggingYourSuites)
+lazy val partitioningRecipes = project.in(file("."))
+  .aggregate(differentSourceFolder, taggingYourSuites, explicitTestSuites, testFilters)
 
 lazy val differentSourceFolder = project.in(file("different-source-folders"))
   .configs(IntegrationTest, DifferentSourceFolders.Configs.UITests)
